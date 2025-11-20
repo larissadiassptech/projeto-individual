@@ -11,7 +11,7 @@ body {
   --tamanho-header: 80px;
   --tamanho-banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
   --tamanho-footer: 65px;
 }
 
@@ -139,10 +139,39 @@ body {
 }
 
 /* LOGIN */
+.pagina-login {
+  overflow: hidden;
+  height: 100%;
+}
+
+.pagina-login .footer {
+  background-color: #000; 
+  height: 100px;           
+  color: #ED145B;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #ED145B;
+}
+.pagina-login .login {
+  top: 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/fundo-tela-login.png');
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pagina-login .footer {
+  display: none !important;
+}
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/fundo-tela-login.png');
   background-size: cover;
 }
 
