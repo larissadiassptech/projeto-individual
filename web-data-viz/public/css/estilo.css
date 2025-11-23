@@ -4,15 +4,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  background-color: rgb(185, 185, 255);
 }
 
 :root {
   --tamanho-header: 80px;
   --tamanho-banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer-simulador) - 2px);
   --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
   --tamanho-footer: 65px;
+  --tamanho-footer-simulador: 10px;
 }
 
 .container {
@@ -23,7 +24,8 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
+  border-bottom: 2px solid black;
+  background-color: #7b34daa9;
 }
 
 .header .container {
@@ -51,7 +53,7 @@ body {
 }
 
 .titulo {
-  color: #6542ff;
+  color: white;
   width: fit-content;
   font-weight: 500;
 }
@@ -122,7 +124,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
+  background-color: #e3b062;
   height: 150px;
   color: #fff;
   display: flex;
@@ -139,9 +141,9 @@ body {
 }
 
 /* LOGIN */
-.pagina-login {
+.container {
   overflow: hidden;
-  height: 100%;
+  max-width: 65%;
 }
 
 .pagina-login .footer {
@@ -333,14 +335,13 @@ input {
 }
 
 /* SIMULADOR */
-
 .simulador {
   color: white;
 }
 
 .simulador .container {
-  flex-direction: column;
-  overflow: scroll; 
+  color: white;
+  display: flex;  
   height: var(--tamanho-simulador);
 }
 
