@@ -41,18 +41,96 @@
     <!-- simulador inicio -->
     <div class="simulador">
         <div class="container">
-            <h2>Simule o valor aproximado de cada livro da série</h2>
+            <h2>Simule abaixo o valor aproximado de cada livro da série</h2>
         </div>
         <div>
-            Selecione o(s) livro(s) que você gostaria de comprar: 
-        </div>
-        Selecione a editora desejada: 
-        <div>
-            Universo dos livros, Loja Varinha
-
-            Prefere realizar o empréstimo do livro em uma biblioteca pública para uma leitura gratuita e de qualidade? Clique Aqui e saiba mais 
+            <b>Selecione o(s) livro(s) que você gostaria de comprar: </b><br><br>
         </div>
     </div>
+    
+<div id="livros-container">
+
+    <div class="livro">
+        <img src="https://i.imgur.com/53Q4ZyJ.jpeg" alt="Malévola">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Malévola">
+            A mais bela de todas - A história da rainha Má
+        </label>
+        <p class="preco">R$ 40,00</p>
+    </div>
+
+    <div class="livro">
+        <img src="https://i.imgur.com/4FBeV7e.jpeg" alt="Rainha Má">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Rainha Má">
+                A fera em mim - A história do Princípe da Bela
+        </label>
+        <p class="preco">R$ 35,00</p>
+    </div>
+
+    <div class="livro">
+        <img src="https://i.imgur.com/4FBeV7e.jpeg" alt="Rainha Má">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Rainha Má">
+                 Úrsula - A história da bruxa da Pequena Sereia
+        </label>
+        <p class="preco">R$ 35,00</p>
+    </div>
+
+    <div class="livro">
+        <img src="https://i.imgur.com/4FBeV7e.jpeg" alt="Rainha Má">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Rainha Má">
+                Malévola: A Rainha do Mal - A história da Fada das Trevas
+        </label>
+        <p class="preco">R$ 35,00</p>
+    </div>
+
+    <div class="livro">
+        <img src="https://i.imgur.com/tp9aqYI.jpeg" alt="Jafar">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Jafar">
+           Mamãe Bruxa - A história da vilã da Rapunzel
+        </label>
+        <p class="preco">R$ 38,00</p>
+    </div>
+
+    <div class="livro">
+        <img src="https://i.imgur.com/4FBeV7e.jpeg" alt="Rainha Má">
+        <label class="titulo-livro">
+            <input type="checkbox" class="chk-livro" value="Rainha Má">
+                As Irmãs Esquisitas - A história das trigêmeas maldosas
+        </label>
+        <p class="preco">R$ 35,00</p>
+    </div>
+
+</div>
+        </div>
+        Selecione a editora desejada: 
+         Universo dos livros, Loja Varinha
+
+            Prefere realizar o empréstimo do livro em uma biblioteca pública para uma leitura gratuita e de qualidade? Clique Aqui e saiba mais 
+        <div>
+<hr>
+
+<h2>Aplicar Desconto</h2>
+
+<label>Desconto (%):</label>
+<input type="number" id="desconto" placeholder="Ex: 10">
+
+<br><br>
+
+<label>Cupom de desconto:</label>
+<input type="text" id="cupom" placeholder="Ex: VILAO10">
+
+<p class="obs">Cupom válido: <strong>VILAO10</strong> (10% OFF)</p>
+
+<br>
+
+<button onclick="calcular()">Calcular Total</button>
+
+<h2>Resultado</h2>
+<div id="resultado"></div>
     <!-- simulador fim -->
 
     <!--footer inicio-->

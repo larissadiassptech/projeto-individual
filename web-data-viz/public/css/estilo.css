@@ -10,7 +10,7 @@ body {
 :root {
   --tamanho-header: 80px;
   --tamanho-banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer-simulador) - 2px);
+  --tamanho-simulador: calc(30vh - var(--tamanho-header) - var(--tamanho-footer-simulador) - 2px);
   --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
   --tamanho-footer: 65px;
   --tamanho-footer-simulador: 10px;
@@ -336,11 +336,11 @@ input {
 
 /* SIMULADOR */
 .simulador {
-  color: white;
+  color: black;
 }
 
 .simulador .container {
-  color: white;
+  color: black;
   display: flex;  
   height: var(--tamanho-simulador);
 }
