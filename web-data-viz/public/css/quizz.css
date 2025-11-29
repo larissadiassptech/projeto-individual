@@ -41,3 +41,59 @@
     font-weight: 500;
     white-space: nowrap;
 }
+
+.quizz-container {
+    margin: 50px auto;
+    background: white;
+    border: 4px solid #4b0082;
+    border-radius: 20px;
+    padding: 5px 30px 30px 30px;
+    width: 350px;
+}
+
+#tituloVilao { 
+    font-size: 26px;
+    font-weight: 900; 
+    color: #4b0082;
+    text-align: left; 
+    border-bottom: 2px solid #e3b062;
+    padding-bottom: 10px;
+}
+
+.opcao {
+    display: flex; 
+    align-items: center;
+    margin: 12px 0; 
+}
+
+.textoOpcao { 
+    font-size: 18px; 
+    font-weight: 500; 
+    color: #333; 
+    margin-left: 8px; 
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.buttons button { 
+    padding: 12px 15px; 
+    background-color: #4d00b38b; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: 600; 
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #6a1b9a; 
+}

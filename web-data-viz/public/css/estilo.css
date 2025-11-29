@@ -11,7 +11,7 @@ body {
   --tamanho-header: 80px;
   --tamanho-banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-simulador: calc(30vh - var(--tamanho-header) - var(--tamanho-footer-simulador) - 2px);
-  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
+  --tamanho-login: calc(110vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
   --tamanho-footer: 65px;
   --tamanho-footer-simulador: 10px;
 }
@@ -148,7 +148,7 @@ body {
   max-width: 65%;
 }
 
-.pagina-login .footer {
+.login .footer {
   background-color: #000; 
   height: 100px;           
   color: #ED145B;        
@@ -158,13 +158,9 @@ body {
   border-top: 2px solid #ED145B;
 }
 
-.pagina-login .footer {
-  display: none !important;
-}
-
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/fundo-tela-login.png');
+  background-image: url('../assets/floresta-encantada.png');
   background-size: cover;
   background-position: center;
 }
