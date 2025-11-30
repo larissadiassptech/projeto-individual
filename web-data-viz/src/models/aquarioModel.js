@@ -16,11 +16,6 @@ function cadastrar(empresaId, descricao) {
   return database.executar(instrucaoSql);
 }
 
-function viloesTop(){
-  var instrucaoSql = `select (nome, idade) FROM vilao`;
-}
-
-
 module.exports = {
   buscarAquariosPorEmpresa,
   cadastrar
