@@ -6,7 +6,7 @@ var opcoes = [
     { id: "opcao5", texto: "Gothel (Mãe Gothel)" }
 ];
 
-function proximaPergunta() {
+function enviarResposta() {
     var escolha = "";
 
     for (var index = 0; index < opcoes.length; index++) {
