@@ -53,6 +53,10 @@ body {
   color: #e3b062;
 }
 
+.navbar li{
+  color: black;
+}
+
 .titulo {
   color: white;
   width: fit-content;
@@ -212,12 +216,14 @@ body {
 }
 
 .social p {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
+  text-align: justify;
+  text-indent: 30px;
 }
 
 .social h4{
-    color: white;
+  color: white;
 }
 
 .box {

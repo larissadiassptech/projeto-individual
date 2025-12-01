@@ -3,7 +3,8 @@ var opcoes = [
     { id: "opcao2", texto: "Malévola" },
     { id: "opcao3", texto: "Grimhilde (Rainha Má)" },
     { id: "opcao4", texto: "Fera" },
-    { id: "opcao5", texto: "Gothel (Mãe Gothel)" }
+    { id: "opcao5", texto: "Gothel (Mãe Gothel)" },
+    { id: "opcao6", texto: "Cruella"}
 ];
 
 function enviarResposta() {

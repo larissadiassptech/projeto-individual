@@ -52,7 +52,9 @@ body {
   list-style: none;
   color: #e3b062;
 }
-
+.navbar li{
+  color: black;
+}
 .titulo {
   color: white;
   width: fit-content;
