@@ -11,6 +11,7 @@
     <script src="./js/sessao.js"></script>
 
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/simulador.css">
     <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
@@ -30,9 +31,6 @@
             </li>
             <li>
                 <a href="formulario.html">Formulário</a>
-            </li>
-            <li>
-                <a href="sobre-mim.html">Sobre Mim</a>
             </li>
             <li>|</li>
             <li>
@@ -55,102 +53,59 @@
             <b>Selecione o(s) livro(s) que você gostaria de comprar: </b><br><br>
         </div>
     </div>
-    
-<div id="livros-container">
+            <div id="listaLivros">
+            <div class="livro-opcao">
+                <img src="/assets/rainha-ma.jpg" alt="Rainha Má">
+                <label><input type="checkbox" id="livro1"> A Mais Bela de Todas (Rainha Má)</label>
+            </div>
+            
+            <div class="livro-opcao">
+                <img src="/assets/fera.jpg" alt="Fera">
+                <label><input type="checkbox" id="livro2"> A Fera em Mim</label>
+            </div>
 
-    <div class="livro">
-        <img src="/assets/rainha-ma.jpg" alt="Rainha Má">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="Rainha Ma">
-            A mais bela de todas - A história da rainha Má
-        </label>
-        <p class="preco">R$ 40,00</p>
-    </div>
+            <div class="livro-opcao">
+                <img src="/assets/ursula.jpg" alt="úrsula">
+                <label><input type="checkbox" id="livro3"> Úrsula</label>
+            </div>
+            
+            <div class="livro-opcao">
+                <img src="/assets/malevola.jpg" alt="Malévola">
+                <label><input type="checkbox" id="livro4"> Malévola: A Rainha do Mal</label>
+            </div>
+            
+            <div class="livro-opcao">
+                <img src="/assets/mamae-bruxa.jpg" alt="Mamãe Bruxa">
+                <label><input type="checkbox" id="livro5"> Mamãe Bruxa</label>
+            </div>
 
-    <div class="livro">
-        <img src="/assets/a fera em mim.jpg" alt="Fera">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="fera">
-                A fera em mim - A história do Princípe da Bela
-        </label>
-        <p class="preco">R$ 35,00</p>
-    </div>
-
-    <div class="livro">
-        <img src="/assets/ursula.jpg" alt="úrsula">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="Ursula">
-                 Úrsula - A história da bruxa da Pequena Sereia
-        </label>
-        <p class="preco">R$ 35,00</p>
-    </div>
-
-    <div class="livro">
-        <img src="/assets/malevola.jpg" alt="Malévola">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="Malevola">
-                Malévola: A Rainha do Mal - A história da Fada das Trevas
-        </label>
-        <p class="preco">R$ 35,00</p>
-    </div>
-
-    <div class="livro">
-        <img src="/assets/mamae-bruxa.jpg" alt="Gothel">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="Gothel">
-           Mamãe Bruxa - A história da vilã da Rapunzel
-        </label>
-        <p class="preco">R$ 38,00</p>
-    </div>
-
-    <div class="livro">
-        <img src="/assets/irmas-esquisitas.jpg" alt="Irmãs Esquisitas">
-        <label class="titulo-livro">
-            <input type="checkbox" class="chk-livro" value="Irmãs Esquisitas">
-                As Irmãs Esquisitas - A história das trigêmeas maldosas
-        </label>
-        <p class="preco">R$ 35,00</p>
-    </div>
-
-</div>
+            <div class="livro-opcao">
+                <img src="/assets/irmas-esquisitas.jpg" alt="As Irmãs Esquisitas">
+                <label><input type="checkbox" id="livro6"> As Irmãs Esquisitas</label>
+            </div>
+            
+        
+        
+        <b><p>Informe o percentual de desconto (ex: 15%):</p></b>
         </div>
-        Selecione a editora desejada: 
-         Universo dos livros, Loja Varinha
+        <input type="text" id="ipt_desconto" placeholder="Digite o desconto em %"><br><br>
+        
+        <div class="calculo">
+        <button onclick="calcularDesconto()">Calcular Preço Final</button><br><br><br><br>
 
-            Prefere realizar o empréstimo do livro em uma biblioteca pública para uma leitura gratuita e de qualidade? Clique Aqui e saiba mais 
-        <div>
-<hr>
+        <div id="div_msg"></div>
+        </div>
 
-<h2>Aplicar Desconto</h2>
-
-<label>Desconto (%):</label>
-<input type="number" id="desconto" placeholder="Ex: 10">
-
-<br><br>
-
-<label>Cupom de desconto:</label>
-<input type="text" id="cupom" placeholder="Ex: VILAO10">
-
-<p class="obs">Cupom válido: <strong>VILAO10</strong> (10% OFF)</p>
-
-<br>
-
-<button onclick="calcular()">Calcular Total</button>
-
-<h2>Resultado</h2>
-<div id="resultado"></div>
-    <!-- simulador fim -->
+    </div>
+<script src="./js/simulador-financeiro.js"></script>
 
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-            <span class="version">v1.0.0</span>
+            <h4>Site desenvolvido por aluna SPTech &copy; 2025</h4>
         </div>
     </div>
     <!--footer fim-->
-
-
 </body>
 
 </html>

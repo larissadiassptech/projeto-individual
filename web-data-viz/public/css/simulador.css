@@ -1,0 +1,121 @@
+.simulador {
+    padding: 0px 0;
+}
+
+.simulador .container {
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 0;
+    border-radius: 12px;
+    color: #4b0082;
+}
+
+.simulador h2 {
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid #e3b062; 
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.simulador b {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    font-size: 16px;
+    color: black;
+    margin-left: 450px;
+}
+
+.simulador p {
+   justify-content: center;
+    align-items: center;
+    display: block;
+    font-size: 16px;
+    color: black;
+    margin-left: 450px;
+}
+
+.calculo button {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: black;
+    margin-left: 520px;
+    padding: 12px;
+    background-color: #7b34daa9; 
+    color: white; 
+    border-radius: 5px; 
+    font-size: 13px; 
+    cursor: pointer; 
+}
+
+#listaLivros {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 0px 0 0px 0;
+    margin-bottom: 0px;
+}
+
+.livro-opcao {
+    width: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; 
+}
+
+.livro-opcao img {
+    width: 100px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.livro-opcao label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    min-height: 40px; 
+    cursor: pointer;
+}
+
+.simulador p {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 500px;
+}
+
+#ipt_desconto{
+    color: black;
+    margin-left: 500px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.simulador button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7b34daa9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.simulador button:hover {
+    background-color: #4b0082;
+}
