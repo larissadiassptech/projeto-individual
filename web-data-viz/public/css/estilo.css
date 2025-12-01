@@ -9,7 +9,7 @@ body {
 
 :root {
   --tamanho-header: 80px;
-  --tamanho-banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-banner: calc(90vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-simulador: calc(30vh - var(--tamanho-header) - var(--tamanho-footer-simulador) - 2px);
   --tamanho-login: calc(110vh - var(--tamanho-header) - var(--tamanho-footer) - 1px);
   --tamanho-footer: 65px;
@@ -37,7 +37,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: black;
 }
 
 .agora {
@@ -63,70 +63,118 @@ body {
   margin: 0;
 }
 
-/* BANNER */
 
 .banner {
-  height: var(--tamanho-banner);
-  color: white;
-  background-image: url('../assets/disney-villains-in-dark-castle-m8z399hlaba6a0as.jpg');
+  height: 100%;
+  color: black;
   background-size: cover;
   background-position: center;
+  margin: 30px;
+  padding-right: 220px;
 
 }
-
-.banner .container {
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .banner .container p {
   width: 50%;
   margin: 0;
   padding: 0;
   font-size: 36px;
+  line-height: 1.1; 
+  white-space: nowrap;
+  font-weight: 700;
 }
 
-.banner .container span {
-  font-weight: 800;
-}
 
-/* MISSÃO VISÃO VALORES */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
-}
-
-.social .container {
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-  justify-content: space-between;
+.banner-imagem {
   width: 100%;
-  padding: 30px 0;
+  height: 50%; 
+  margin: 0 auto;
 }
 
-.social p {
-  text-align: center;
+.img-banner-completo {
+  width: 100%;
+  height: 50%;    
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
+
+.banner .container {
+  justify-content: center;
   align-items: center;
+  height: 40%;
+  padding: 5px;
+  padding-right: 400px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+}
+
+.livro {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.livro img {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sinopse {
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sinopse h2 {
+  margin-left: 30px;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+}
+
+.sinopse p {
+  margin-top: 0; 
+  text-indent: 30px;
+}
+
+.livro-direita-rainha {
+  background: #bb3737ee;
+  color: black;
+}
+
+.livro-esquerda-fera {
+  background: #32b9cd;
+}
+
+.livro-direita-ursula {
+  background: #b341e0;
+}
+
+.livro-esquerda-malevola {
+  background: #5bbd5b;
+}
+
+.livro-direita-gothel {
+  background: #e160d8;
+}
+
+.livro-esquerda-irmas {
+  background: #5bbd5b;
 }
 
 /* FOOTER */
 
 .footer {
-  background-color: #e3b062;
+  background-color: #7b34daa9;
   height: 150px;
   color: #fff;
   display: flex;
