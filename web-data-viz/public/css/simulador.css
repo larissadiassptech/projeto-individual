@@ -119,3 +119,15 @@
 .simulador button:hover {
     background-color: #4b0082;
 }
+
+#div_msg {
+    justify-items: center;
+    align-items: center;
+    padding-left: 510px;
+    padding-bottom: 40px;
+}
+
+#div_msg h3{
+    padding-right: 550px;
+    white-space: nowrap;
+}
